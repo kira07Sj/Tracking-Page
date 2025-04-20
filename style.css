@@ -244,6 +244,17 @@ iconify-icon{
     border-radius: 26px;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    animation: shipmentBoxAnimation 1.4s ease-in-out forwards;
+}
+@keyframes shipmentBoxAnimation {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .shipment-card {
