@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shipment Tracking Results</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="trackingpage.css">
     <link rel="icon" href="assets/Our_Courier_webicon.png" type="image/png">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
@@ -23,194 +23,220 @@
             <button onclick="window.print()" class="print-btn"><iconify-icon icon="material-symbols-light:print" width="24" height="24"></iconify-icon>Print Shipment</button>
         </div>
 
-        <div class="status-badge"><iconify-icon icon="mdi:office-building-marker" width="24" height="24"></iconify-icon> Branch Office Received</div>
+        
 
         <div class="shipment-box">
             <h2 class="shipment-info">Shipment Information</h2>
+            <div class="shipment-details">
+                <div class="shipment-details-btns">
+                    <button id="activeBtn" class="activeBtn">Sender</button>
+                    <button>Recipient</button>
+                    <div class="btnB"></div>
+                </div>
+
+                <div class="details-list">
+                    <div class="icon">
+                        <iconify-icon icon="material-symbols-light:print" width="24" height="24"></iconify-icon>
+                    </div>
+                    <div class="list-item">
+                        <label for="">City Collection</label>
+                        <p>Nepal</p>
+                    </div>
+                    <div class="list-item">
+                        <label for="">Destination city</label>
+                        <p>Kathmandu</p>
+                    </div>
+                </div>
+                <div class="details-list">
+                    <div class="icon">
+                        <iconify-icon icon="material-symbols-light:print" width="24" height="24"></iconify-icon>
+                    </div>
+                    <div class="list-item">
+                        <label for="">Date of shipment</label>
+                        <p>2025-04-15</p>
+                    </div>
+                    <div class="list-item">
+                        <label for="">Shipping time</label>
+                        <p>2-5 Days</p>
+                    </div>
+                </div>
+                <div class="details-list">
+                    <div class="icon">
+                        <iconify-icon icon="material-symbols-light:print" width="24" height="24"></iconify-icon>
+                    </div>
+                    <div class="list-item full-width">
+                        <label for="">Contact Name</label>
+                        <p>Maya Adhikari</p>
+                    </div>
+                    
+                </div>
+                <div class="details-list">
+                    <div class="icon">
+                        <iconify-icon icon="material-symbols-light:print" width="24" height="24"></iconify-icon>
+                    </div>
+                    <div class="list-item full-width">
+                        <label for="">Contact Address</label>
+                        <p>Bouddha</p>
+                    </div>
+                    
+                </div>
+                <div class="package">
+                    <iconify-icon icon="material-symbols-light:print" width="24" height="24"></iconify-icon><h3>Package Details</h3>
+                </div>
+
+                <div class="details-list">
+                    <div class="icon " style="opacity: 0;">
+                        <iconify-icon icon="material-symbols-light:print" width="24" height="24"></iconify-icon>
+                    </div>
+                    <div class="list-item">
+                        <label for="">Shipping quantity</label>
+                        <p>1</p>
+                    </div>
+                    <div class="list-item">
+                        <label for="">Total weight</label>
+                        <p>5</p>
+                    </div>
+                </div>
+
+                <div class="details-list">
+                    <div class="icon" style="opacity: 0;">
+                        <iconify-icon icon="material-symbols-light:print" width="24" height="24"></iconify-icon>
+                    </div>
+                    <div class="list-item full-width Description">
+                        <label for="">Description</label>
+                        <p>Table Calander</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="history-box"><h2>Shipping history</h2>
+                <div class="history-list">
+                    <div class="history-list-item">
+                        <div class="dateTime">
+                            <p>15-04-2025</p>
+                            <b>08:33 pm</b>
+                        </div>
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                        <div>
+                            <div class="history-detail">
+                                <p>Booking Shipment</p>
+                                <b>+ Shipment Created</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="history-list-item">
+                        <div class="dateTime">
+                            <p>15-04-2025</p>
+                            <b>08:33 pm</b>
+                        </div>
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                        <div>
+                            <div class="history-detail">
+                                <p>Booking Shipment</p>
+                                <b>+ Shipment Created</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="history-list-item">
+                        <div class="dateTime">
+                            <p>15-04-2025</p>
+                            <b>08:33 pm</b>
+                        </div>
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                        <div>
+                            <div class="history-detail">
+                                <p>Booking Shipment</p>
+                                <b>+ Shipment Created</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="history-list-item">
+                        <div class="dateTime">
+                            <p>15-04-2025</p>
+                            <b>08:33 pm</b>
+                        </div>
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                        <div>
+                            <div class="history-detail">
+                                <p>Booking Shipment</p>
+                                <b>+ Shipment Created</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="history-list-item">
+                        <div class="dateTime">
+                            <p>15-04-2025</p>
+                            <b>08:33 pm</b>
+                        </div>
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                        <div>
+                            <div class="history-detail">
+                                <p>Booking Shipment</p>
+                                <b>+ Shipment Created</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="history-list-item">
+                        <div class="dateTime">
+                            <p>15-04-2025</p>
+                            <b>08:33 pm</b>
+                        </div>
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                        <div>
+                            <div class="history-detail">
+                                <p>Booking Shipment</p>
+                                <b>+ Shipment Created</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="history-list-item">
+                        <div class="dateTime">
+                            <p>15-04-2025</p>
+                            <b>08:33 pm</b>
+                        </div>
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                        <div>
+                            <div class="history-detail">
+                                <p>Booking Shipment</p>
+                                <b>+ Shipment Created</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="history-list-item">
+                        <div class="dateTime">
+                            <p>15-04-2025</p>
+                            <b>08:33 pm</b>
+                        </div>
+                        <div class="progress">
+                            <div></div>
+                        </div>
+                        <div>
+                            <div class="history-detail">
+                                <p>Booking Shipment</p>
+                                <b>+ Shipment Created</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
             
-            <div class="info-grid">
-                <div class="shipment-card">
-                    <div class="sender-section">
-                        <h3 class="card-name">Sender</h3>
-                        <div class="info-row">
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="mdi:location" width="24" height="24"></iconify-icon></div>
-                               <div class="info-item-list">
-                                    <label>City Collection</label>
-                                    <p>Nepal</p>
-                               </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="mdi:location" width="24" height="24"></iconify-icon></div>
-                                <div class="info-item-list">
-                                    <label>Origin City</label>
-                                    <p>Kathmandu</p>
-                               </div>
-                            </div>
-                        </div>
-                        <div class="info-row">
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="clarity:date-solid" width="24" height="24"></iconify-icon></div>
-                                <div class="info-item-list">
-                                    <label>Date of shipment</label>
-                                    <p>2025-04-15</p>
-                               </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="mingcute:time-fill" width="24" height="24"></iconify-icon></div>
-                                <div class="info-item-list">
-                                    <label>Shipping time</label>
-                                    <p>2-5 Days</p>
-                               </div>
-                            </div>
-                        </div>
-                        <div class="info-row">
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="mage:contact-book-fill" width="24" height="24"></iconify-icon></div>
-                                <div class="info-item-list">
-                                    <label>Contact Name</label>
-                                    <p>Maya Adhikari</p>
-                               </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="entypo:address" width="20" height="20"></iconify-icon></div>
-                                <div class="info-item-list">
-                                    <label>Contact Address</label>
-                                    <p>Bouddha</p>
-                               </div>
-                            </div>
-                        </div>
-                        <div class="info-row">
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="fluent-mdl2:quantity" width="24" height="24"></iconify-icon></div>
-                                <div class="info-item-list">
-                                    <label>Shipping quantity</label>
-                                    <p>1</p>
-                               </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="material-symbols:weight-sharp" width="24" height="24"></iconify-icon></div>
-                                <div class="info-item-list">
-                                    <label>Total weight</label>
-                                    <p>5</p>
-                               </div>
-                            </div>
-                        </div>
-                        <div class="info-row">
-                            <div class="info-item full-width">
-                                <div class="icons"><iconify-icon icon="material-symbols:description" width="24" height="24"></iconify-icon></div>
-                                <div class="info-item-list">
-                                    <label>Description</label>
-                                    <p>Table Calender</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="shipment-card">
-                    <div class="recipient-section">
-                        <h3 class="card-name">Recipient</h3>
-                        <div class="info-row">
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="mdi:location" width="24" height="24"></iconify-icon></div>
-
-                                <div class="info-item-list">
-                                    <label>Delivery city</label>
-                                    <p>Nepal</p>
-                               </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="mdi:location" width="24" height="24"></iconify-icon></div>
-
-                                <div class="info-item-list">
-                                    <label>Destination</label>
-                                    <p>Kathmandu</p>
-                               </div>
-                            </div>
-                        </div>
-                        <div class="info-row">
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="clarity:date-solid" width="24" height="24"></iconify-icon></div>
-
-                                <div class="info-item-list">
-                                    <label>Delivery date</label>
-                                    <p>2025-04-15 
-                                        18:33:43</p>
-                               </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="mingcute:time-fill" width="24" height="24"></iconify-icon></div>
-
-                                <div class="info-item-list">
-                                    <label>Shipping time</label>
-                                    <p>2-5 Days</p>
-                               </div>
-                            </div>
-                        </div>
-                        <div class="info-row">
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="mage:contact-book-fill" width="24" height="24"></iconify-icon></div>
-
-                                <div class="info-item-list">
-                                    <label>Contact Name</label>
-                                    <p>Nepal</p>
-                               </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="icons"><iconify-icon icon="entypo:address" width="20" height="20"></iconify-icon></div>
-
-                                <div class="info-item-list">
-                                    <label>Contact Address</label>
-                                    <p></p>
-                               </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                
-            </div>
-
-            <div class="shipping-history">
-                <h2>Shipping History</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h4 class="card-name">Booking Shipment</h4>
-                            <div class="timeline-details">
-                                <div class="detail-item">
-                                    <label>Date of shipment</label>
-                                    <p>2025-04-15</p>
-                                </div>
-                                <div class="detail-item">
-                                    <label>Shipping time</label>
-                                    <p>08:33:43 pm</p>
-                                </div>
-                            </div>
-                            <div class="status-message success">+ Shipment Created</div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h4 class="card-name">Branch Office Received</h4>
-                            <div class="timeline-details">
-                                <div class="detail-item">
-                                    <label>Date of shipment</label>
-                                    <p>2025-04-19</p>
-                                </div>
-                                <div class="detail-item">
-                                    <label>Shipping time</label>
-                                    <p>06:26:06 pm</p>
-                                </div>
-                            </div>
-                            <div class="status-message success">+ Received with thanks.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
         </div>
 
@@ -218,6 +244,6 @@
     </div>
 
     
-
+    <script src="script.js"></script>
 </body>
 </html>
